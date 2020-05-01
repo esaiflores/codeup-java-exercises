@@ -20,13 +20,50 @@ public class HelloWorld {
 //      Declare an long variable named myNumber, but do not assign anything to it.
 //      Next try to print out myNumber to the console. What happens?
 //      long myNumber;
+        Float myNumber;
 //      System.out.println(myNumber);
 //      Doesn't work
 
+//      myNumber = 123L;
+
+        myNumber = 123F;
+
+//      Had to add the capital F so it knew it was a float
+
+//        int x = 5;
+//        System.out.println(x++);
+//        System.out.println(x);
+
+        int x = 5;
+        System.out.println(++x);
+        System.out.println(x);
+
+//
+//        String theNumberThree = "three";
+//        Object o = theNumberThree;
+//        int three = (int) o;
+
+//        int x = 4;
+//        x = x + 5;
+//
+//        x += 5;
 
 
+//
+//        int x = 3;
+//        int y = 4;
+//        y = y * x;
+//
+//        y *= x;
 
-
+//
+//        int x = 10;
+//        int y = 2;
+//        x = x / y;
+//        y = y - x;
+//
+//        x /= y;
+//        y -= x;
 
 
     }
