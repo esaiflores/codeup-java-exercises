@@ -6,10 +6,12 @@ public class MethodsExercise {
         Scanner input = new Scanner(System.in);
         System.out.println(addition(2, 3));
         System.out.println(subtraction(10, 6));
-        System.out.println(multply(4, 9));
+        System.out.println(multiply(4, 9));
         System.out.println(div(8, 4));
         System.out.println(modulus(6, 3));
         System.out.println(getInt(0, 10));
+        System.out.println(factorial());
+
     }
 
     public static int addition(int sum1, int sum2) {
@@ -20,7 +22,7 @@ public class MethodsExercise {
         return sum3 - sum4;
     }
 
-    public static int multply(int sum5, int sum6) {
+    public static int multiply(int sum5, int sum6) {
         return sum5 * sum6;
     }
 
@@ -53,5 +55,29 @@ public class MethodsExercise {
         }
         return 0;
     }
-        }
+    public static long factorial(){
+       Scanner input = new Scanner(System.in);
+            System.out.println("enter a number between 1-10");
+            int number = input.nextInt();
+            int startValue = 1;
+            String middleString = "";
+
+            for (int i = 1; i <= number; i++) {
+                startValue *= i;
+                if (middleString.isEmpty()) {
+                    middleString += i;
+                } else {
+                    middleString += " X " + i;
+                }
+                System.out.println(i + "! = " + middleString + " = " + startValue);
+            }
+        System.out.println("Would you like to continue? {y/n}");
+            String yesNO = input.nextLine();
+            if(yesNO.equalsIgnoreCase("y")){
+                factorial();
+            }
+            return 0;
+    }
+
+}
 
