@@ -9,6 +9,9 @@ public class Circle {
 
     }
 
+    public static void getCount() {
+    }
+
     public double getArea() {
         return Math.PI * (Math.pow(this.radius, 2));
     }

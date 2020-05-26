@@ -1,7 +1,7 @@
 import javax.xml.stream.XMLInputFactory;
 import java.util.Scanner;
 
-public class MethodsExercise {
+public class MethodsExercises {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println(addition(2, 3));
